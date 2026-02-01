@@ -82,3 +82,17 @@ from visualization import MarketVisualizer
 
 fig = MarketVisualizer.plot_price_paths(simulated_paths)
 fig.show()
+
+## Design Principles
+- Modularity through independent plotting functions  
+- Clear visual encoding of uncertainty and risk  
+- Extensible design for custom market models  
+- Reproducible and deterministic visualization behavior  
+
+## Limitations
+- Visualization-only module  
+- Assumes normalized prices in the range `[0, 1]`  
+- Arbitrage plotting depends on an external detector implementation  
+
+## License
+This project is intended for educational and research use. You are free to modify and extend it for academic or experimental purposes.
