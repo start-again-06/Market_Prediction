@@ -49,7 +49,6 @@ class MarketVisualizer:
         plt.tight_layout()
         return fig
 
-    @staticmethod
     def plot_kelly_allocations(allocations: dict, bankroll: float):
         non_zero = {k: v for k, v in allocations.items() if v > 0}
 
@@ -104,8 +103,7 @@ class MarketVisualizer:
         plt.tight_layout()
         return fig
 
-    @staticmethod
-    def plot_calibration(calibration_df):
+     def plot_calibration(calibration_df):
         if calibration_df is None or calibration_df.empty:
             print("No calibration data to plot!")
             return None
@@ -154,7 +152,6 @@ class MarketVisualizer:
         plt.tight_layout()
         return fig
 
-    @staticmethod
     def plot_arbitrage_opportunities(markets: list, detector):
         arb_results = []
         for market in markets:
