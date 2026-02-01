@@ -77,11 +77,11 @@ All visualization functionality is implemented as static methods, allowing easy 
 - pandas  
 
 ## Usage Example
-```python
-from visualization import MarketVisualizer
 
-fig = MarketVisualizer.plot_price_paths(simulated_paths)
-fig.show()
+`from visualization import MarketVisualizer`
+
+`fig = MarketVisualizer.plot_price_paths(simulated_paths)`
+`fig.show()`
 
 ## Design Principles
 - Modularity through independent plotting functions  
